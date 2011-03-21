@@ -1,0 +1,8 @@
+<!-- Probably move the stylesheet to you layout. Also make sure you include the javascript. -->
+- stylesheet_link_tag "event_calendar"
+
+%h1 Steve's Calendar
+
+= link_to 'Add New Event', new_event_path, :class => 'lbOn'
+
+= raw(event_calendar)
