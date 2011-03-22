@@ -7,7 +7,7 @@ Billcue::Application.routes.draw do
 
   resources :events
 
-  match '*a', :to => 'errors#routing'
+  #match '*a', :to => 'errors#routing' #rails 3 a is a param for bad url
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
