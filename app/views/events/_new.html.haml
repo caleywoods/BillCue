@@ -1,6 +1,15 @@
 - form_for(@event) do |f|
-  = f.label 'Name: '
-  = f.text_field 'name'
+  = f.label :name
+  = f.text_field :name
+  %p
+    = f.label :start_at
+    = f.date_select :start_at
 
-  = f.submit 'Create'
+  %p
+    = f.label :end_at
+    = f.date_select :end_at
 
+  %p
+    = f.submit 'Create'
+
+= button_to 'Close Window', '#', :class => 'lbAction', :rel => 'deactivate'
