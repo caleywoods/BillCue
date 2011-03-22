@@ -1,0 +1,8 @@
+%h1
+  = @event.name
+
+%h4
+  Price:
+
+%h4
+  #{ @event.start_at.strftime('due on %m/%d') }

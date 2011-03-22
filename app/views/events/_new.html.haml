@@ -10,6 +10,6 @@
     = f.date_select :end_at
 
   %p
-    = f.submit 'Create'
+    = f.submit 'Create', :class => 'lbAction', :rel => 'deactivate'
 
 = button_to 'Close Window', '#', :class => 'lbAction', :rel => 'deactivate'
