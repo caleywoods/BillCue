@@ -5,4 +5,4 @@
   Price:
 
 %h4
-  #{ @event.start_at.strftime('due on %m/%d') }
+  #{ @event.start_at.to_s(:due) }
